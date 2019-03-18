@@ -73,7 +73,7 @@ $(document).ready(function(){
 		var htmlString = document.getElementById('modal_content');
 		var product1 = document.createElement('div');
 		product1.className = "col-12 col-lg-6";
-		product1.innerHTML = '<div class="basket_product"><div class="basket_img"><img src="img/product.png"></div><div class="basket_text"><p class="basket_name">Reebok Track Jacket</p> <span class="basket_price">100$</span></div><div class="mod-prod-close">&times;</div></div>';
+		product1.innerHTML = '<div class="basket_product"><div class="basket_img"><img src="../img/product.png"></div><div class="basket_text"><p class="basket_name">Reebok Track Jacket</p> <span class="basket_price">100$</span></div><div class="mod-prod-close">&times;</div></div>';
 		basket_num++;
 		$('.basket_number').html(basket_num);
 		htmlString.appendChild(product1);
