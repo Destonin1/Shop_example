@@ -31,7 +31,8 @@ body {
 	margin: 0;
 	padding: 0;
 	outline: none;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 p {
@@ -48,14 +49,23 @@ img {
 }
 
 .mail_and_phone {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .mail, .phone {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-size: 1.2rem;
 	color: #34404b;
 }
@@ -92,8 +102,11 @@ img {
 }
 
 .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	line-height: 3.4rem;
 }
 
@@ -129,6 +142,8 @@ img {
 
 .navigation button:hover {
 	-webkit-transform: scale(1.14);
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -148,7 +163,9 @@ img {
 	position: absolute;
 	bottom: 70%;
 	right: 50%;
-	transform: translateX(50%);
+	-webkit-transform: translateX(50%);
+	    -ms-transform: translateX(50%);
+	        transform: translateX(50%);
 	font-size: 14px;
 	background: #34404b;
 	color: #fff;
@@ -255,6 +272,8 @@ img {
  .my-dots li.slick-active button:before {
  	-webkit-transform: scale(1,1.8);
   	background: #ff5912;
+  	-webkit-transition: 1s;
+  	-o-transition: 1s;
   	transition: 1s;
 }
 
@@ -307,7 +326,8 @@ img {
 }
 
 .product_image:hover {
-	box-shadow: 0 0 20px rgb(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 20px rgb(0,0,0,0.1);
+	        box-shadow: 0 0 20px rgb(0,0,0,0.1);
 }
 
 .product_image p {
@@ -435,10 +455,15 @@ span.green {
 }
 
 .sale {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	background: #fff;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 1rem;
 }
 
@@ -472,9 +497,15 @@ span.green {
 }
 
 .sale_size {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background: #fff;
 	height: 100%;
 }
@@ -527,9 +558,15 @@ span.green {
 .bestsales_product {
 	padding: 3.5rem 2.5rem;
 	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .bestsales_text a {
@@ -544,9 +581,15 @@ span.green {
 }
 
 .mark_price_wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .bestsales_mark_price span {
@@ -581,7 +624,8 @@ span.green {
 }
 
 .bestsales_product:hover {
-	box-shadow: 0 0 20px rgb(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 20px rgb(0,0,0,0.1);
+	        box-shadow: 0 0 20px rgb(0,0,0,0.1);
 }
 
 /* EMAIL */
@@ -595,13 +639,21 @@ span.green {
 	background: #fff;
 	padding: 4rem;
 	margin-top: 8rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .letter_title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .letter_title h3 {
@@ -659,9 +711,14 @@ footer {
 .footer_menu {
 	font-size: 1.4rem;
 	color: #28313b;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .footer_menu_item {
@@ -784,9 +841,15 @@ footer {
 	padding: 4rem 0;
 	border-bottom: 1px solid #ece8e8;
 	border-top: 1px solid #ece8e8;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-size: 1.8rem;
 	color: #34404b;
 	font-weight: 700;
@@ -867,9 +930,15 @@ footer {
 }
 
 .price_order {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-size: 2.5rem;
 	font-weight: 700;
 	margin-top: 4rem;
@@ -918,10 +987,18 @@ footer {
 	font-family: HarmoniaBd, sans-serif;
 	padding: 2rem 4rem;
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	font-size: 1.6rem;
 	color: #34404b;
 	cursor: pointer;
@@ -944,7 +1021,8 @@ li.categories_elem_active {
 }
 
 .polzunok-container * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: none;
 }
 .polzunok-container {
@@ -964,7 +1042,8 @@ li.categories_elem_active {
 	margin: 0 auto;
     position: relative;
     height: 3px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 1);
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 1);
 }
 .polzunok-container .ui-slider .ui-slider-handle {
     position: absolute;
@@ -1020,12 +1099,11 @@ li.categories_elem_active {
 .sizes_form label {
 	cursor: pointer;
 	-moz-user-select: none;
-   -khtml-user-select: none;
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
 }
-}
+
 
 .sizes_form p {
 	padding: 1.5rem 0;
@@ -1070,10 +1148,19 @@ input[type=checkbox]:checked + label {
 }
 
 .feedback {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	background: #fff;
 	padding: 5rem;
 	margin-top: 8rem;
@@ -1223,8 +1310,11 @@ input[type=checkbox]:checked + label {
 
 .basket_product {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	padding: 2rem;
 	margin-bottom: 3rem;
 	border: 1px solid #ece8e8;
@@ -1252,10 +1342,19 @@ input[type=checkbox]:checked + label {
 
 .basket_text {
 	font-size: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-end;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 }
 
 #basket_modal {
@@ -1274,15 +1373,24 @@ input[type=checkbox]:checked + label {
 	padding: 0;
 	border-width: 0;
 	border-radius: 5px;
-	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+	        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
 	visibility: hidden;
-	transform: translateX(-50%) scale(0.1);
+	-webkit-transform: translateX(-50%) scale(0.1);
+	    -ms-transform: translateX(-50%) scale(0.1);
+	        transform: translateX(-50%) scale(0.1);
+	-webkit-transition: -webkit-transform 200ms;
+	transition: -webkit-transform 200ms;
+	-o-transition: transform 200ms;
 	transition: transform 200ms;
+	transition: transform 200ms, -webkit-transform 200ms;
 }
 
 dialog.dialog-scale {
     visibility: visible;
-    transform: translateX(-50%) scale(1);  
+    -webkit-transform: translateX(-50%) scale(1);
+        -ms-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);  
 }
 
 .site-dialog h1 {
@@ -1307,9 +1415,14 @@ dialog.dialog-scale {
 }
 
 .btn-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 1rem 0;
 	background: #34404b;
 }
@@ -1361,6 +1474,7 @@ dialog.dialog-scale {
 	}
 }
 
+
 @media screen and (max-width: 991px) {
 	html {
 		font-size: 8px;
@@ -1399,6 +1513,7 @@ dialog.dialog-scale {
 	.contacts-info {
 		text-align: center;
 	}
+}
 
 @media screen and (max-width: 770px) {
 
@@ -1425,20 +1540,33 @@ dialog.dialog-scale {
 		width: 100%;
 		background: #fff;
 		z-index: 2;
-		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		    -ms-transform: translateY(-100%);
+		        transform: translateY(-100%);
 		opacity: 0.9;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 	}
 
 	.menu_fixed_active {
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		    -ms-transform: translateY(0);
+		        transform: translateY(0);
 	}
 
 	.small_menu {
 		height: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.small_menu li {
@@ -1490,9 +1618,14 @@ dialog.dialog-scale {
 
 	.sale_size_text {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding: 2rem;
 	}
 
@@ -1502,7 +1635,8 @@ dialog.dialog-scale {
 
 	.bestsales_product {
 		margin: 0 auto;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		margin-bottom: 4rem;
 	}
 
@@ -1510,9 +1644,15 @@ dialog.dialog-scale {
 		margin-top: 6rem;
 		padding: 2rem 0;
 		height: 85%;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.email_button {
@@ -1537,11 +1677,15 @@ dialog.dialog-scale {
 	}
 
 	.product_images {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 
 	.product_detail_info {
-		order: 1;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 
 	.price_order {
@@ -1549,13 +1693,21 @@ dialog.dialog-scale {
 	}
 
 	.price_order1 {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		font-size: 3rem;
 		font-weight: 700;
 		margin-top: 4rem;
-		order: 3;
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3;
 	}
 
 	.about-photo {
@@ -1570,12 +1722,17 @@ dialog.dialog-scale {
 	}
 
 	.mail_and_phone {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.mail, .phone {
 		margin: 0;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 
 	.phone {
@@ -1679,7 +1836,10 @@ dialog.dialog-scale {
 	}
 
 	.letter_title {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.letter_title h3 {
@@ -1687,9 +1847,16 @@ dialog.dialog-scale {
 	}
 
 	.choose_options  {
-		flex-direction: column;	
-		justify-content: flex-start;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;	
+		-webkit-box-pack: start;	
+		    -ms-flex-pack: start;	
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.choose_numder {
