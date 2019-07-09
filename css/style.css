@@ -79,6 +79,10 @@ img {
 	margin-right: 2rem;
 }
 
+.phone, .mail {
+	white-space: nowrap;
+}
+
 .header_links {
 	text-align: right;
 }
