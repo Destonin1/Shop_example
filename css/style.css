@@ -70,6 +70,10 @@ img {
 	color: #34404b;
 }
 
+.mail, .phone p {
+	white-space: nowrap;
+}
+
 .mail img, .phone img {
 	margin-right: 0.9rem;
 	height: 80%;
@@ -77,10 +81,6 @@ img {
 
 .mail {
 	margin-right: 2rem;
-}
-
-.phone, .mail {
-	white-space: nowrap;
 }
 
 .header_links {
