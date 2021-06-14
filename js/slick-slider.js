@@ -5,6 +5,7 @@ $(document).ready(function(){
 		arrows: false,
 		dots: true,
 		vertical: true,
+		verticalSwiping: true,
 		dotsClass: "my-dots"
 	});
 
