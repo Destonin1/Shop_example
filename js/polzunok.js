@@ -1,15 +1,16 @@
 $(document).ready(function(){
 	$(".polzunok").slider({
     min: 0,
-    max: 10000,
-    values: [2000, 8000],
+    max: 4000,
+    values: [1, 4000],
     range: true,
     animate: "fast",
     slide : function(event, ui) {    
         $(".polzunok-input-left").val(ui.values[ 0 ]);   
         $(".polzunok-input-right").val(ui.values[ 1 ]);  
     }    
-});
+	});
+	
 	$(".polzunok-input-left").val($(".polzunok").slider("values", 0));
 	$(".polzunok-input-right").val($(".polzunok").slider("values", 1));
 	$(document).focusout(function() {

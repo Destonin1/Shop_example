@@ -53,12 +53,11 @@
 							<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 						</div>
 					</div>
-					<div class="col-md-7 col-2">
+					<div class="col-md-6 col-2">
 						<div class="menu_wrap">
 							<ul class="menu">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="products.html">Products</a></li>
-								<li><a href="#">Hot Deals</a></li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -69,7 +68,6 @@
 									<ul class="menu small_menu">
 										<li><a href="index.html">Home</a></li>
 										<li><a href="products.html">Products</a></li>
-										<li><a href="#">Hot Deals</a></li>
 										<li><a href="about.html">About</a></li>
 										<li><a href="contact.html">Contact</a></li>
 									</ul>
@@ -77,10 +75,13 @@
 							</i>
 						</div>
 					</div>
-					<div class="col-md-3 col-5">
+					<div class="col-md-4 col-5">
 						<div class="navigation">
-							<button><i class="fas fa-search"></i></button>
-							<button class="but"><i class="far fa-user"></i></button>
+							<button class="search_btn">
+								<i class="fas fa-search search_ibtn"></i>
+								<input class="search_input" type="text" name="search" placeholder="search...">
+							</button>
+							<button class="but"><i class="far fa-user" data-toggle="modal" data-target="#login_modal"></i></button>
 							<button type="button" class="basket_btn" data-toggle="modal" data-target="#basket_modal">
 								<i class="fas fa-shopping-basket"></i>
 								<span class="basket_number">0</span>
@@ -98,19 +99,19 @@
 				<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-0 col-12 product_images" >
 					<div class="product_info_images">
 						<div class="product_info_image">
-								<img class="product_info_image_click" src="img/12.png">
-								<img class="product_info_image_click" src="img/product.png">
-								<img class="product_info_image_click" src="img/product3.png">
+								<img class="product_info_image_click" src="img/images.jpg">
+								<img class="product_info_image_click" src="img/Skinny Trousers.jpg">
+								<img class="product_info_image_click" src="img/Boot_leather.jpg">
 						</div>
 						<div class="product_info_buttons">
 							<div class="product_slide_img">
-								<img src="img/12_min.png" alt="product">
+								<img src="img/Half_Jacket.png" alt="product">
 							</div>
 							<div class="product_slide_img">
-								<img src="img/product.png" alt="product">		
-								</div>
+								<img src="img/Skinny Trousers.jpg" alt="product">
+							</div>
 							<div class="product_slide_img">
-								<img src="img/product3.png" alt="product">
+								<img src="img/Boot_leather.jpg" alt="product">
 							</div>
 						</div>
 					</div>
@@ -140,9 +141,9 @@
 									</div>
 								</div>
 								<p class="choose_numder">
-									Choose Quantity: <button id="plus">+</button> 
+									Choose Quantity: <button id="minus">-</button>
 									<span id="counter">0</span> 
-									<button id="minus">-</button>
+									<button id="plus">+</button>
 								</p>
 							</div>
 							<div class="price_order">
@@ -180,107 +181,8 @@
 					</div>
 				</div>
 				<div class="col-md-12 products_images">
-						<div class="row">
-							<div class="col-md-3 col-sm-6 col-12">
-								<div class="product_image">
-								<a href="product.php"><img src="img/product.png" alt="product"></a>
-								<a href="product.php"><p>Reebok Track Jacket</p></a>
-								<span class="product_image_price">100$</span>
-								<div class="product_image_hover">
-									<a href="product.php">
-										<img src="img/product.png" alt="product">
-										<p class="product_image_title">Reebok Track Jacket</p>
-									</a>
-									<p class="product_image_udertitle">sizes<span> : </span>s - m - l - xl</p>
-									<div class="product_colors">
-										<span class="red"></span>
-										<span class="black"></span>
-										<span class="blue"></span>
-										<span class="green"></span>
-									</div>
-									<div class="product_icons">
-										<i class="fas fa-globe"></i>
-										<i class="fas fa-cart-plus add_to_cart"></i>
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-12">
-								<div class="product_image">
-								<a href="product.php"><img src="img/product.png" alt="product"></a>
-								<a href="product.php"><p>Reebok Track Jacket</p></a>
-								<span class="product_image_price">100$</span>
-								<div class="product_image_hover">
-									<a href="product.php">
-										<img src="img/product.png" alt="product">
-										<p class="product_image_title">Reebok Track Jacket</p>
-									</a>
-									<p class="product_image_udertitle">sizes<span> : </span>s - m - l - xl</p>
-									<div class="product_colors">
-										<span class="red"></span>
-										<span class="black"></span>
-										<span class="blue"></span>
-										<span class="green"></span>
-									</div>
-									<div class="product_icons">
-										<i class="fas fa-globe"></i>
-										<i class="fas fa-cart-plus add_to_cart"></i>
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-12">
-								<div class="product_image">
-								<a href="product.php"><img src="img/product.png" alt="product"></a>
-								<a href="product.php"><p>Reebok Track Jacket</p></a>
-								<span class="product_image_price">100$</span>
-								<div class="product_image_hover">
-									<a href="product.php">
-										<img src="img/product.png" alt="product">
-										<p class="product_image_title">Reebok Track Jacket</p>
-									</a>
-									<p class="product_image_udertitle">sizes<span> : </span>s - m - l - xl</p>
-									<div class="product_colors">
-										<span class="red"></span>
-										<span class="black"></span>
-										<span class="blue"></span>
-										<span class="green"></span>
-									</div>
-									<div class="product_icons">
-										<i class="fas fa-globe"></i>
-										<i class="fas fa-cart-plus add_to_cart"></i>
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-12">
-								<div class="product_image">
-								<a href="product.php"><img src="img/product.png" alt="product"></a>
-								<a href="product.php"><p>Reebok Track Jacket</p></a>
-								<span class="product_image_price">100$</span>
-								<div class="product_image_hover">
-									<a href="product.php">
-										<img src="img/product.png" alt="product">
-										<p class="product_image_title">Reebok Track Jacket</p>
-									</a>
-									<p class="product_image_udertitle">sizes<span> : </span>s - m - l - xl</p>
-									<div class="product_colors">
-										<span class="red"></span>
-										<span class="black"></span>
-										<span class="blue"></span>
-										<span class="green"></span>
-									</div>
-									<div class="product_icons">
-										<i class="fas fa-globe"></i>
-										<i class="fas fa-cart-plus add_to_cart"></i>
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
-							</div>
-							</div>
+						<div id="products_row" class="row">
+						
 						</div>
 				</div><!--products_images-->
 			</div>
@@ -355,7 +257,46 @@
 		</div>
 	</footer>
 
-
+	<div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Fill the form:</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div id="modal_content" class="modal-body row modal_content">
+				<div class="login_wrap form_wrap">
+					<form>
+						<h3 class="form_header col-lg-12">Log in</h3>
+						  <div class="form_input col-lg-9 offset-2"><span class="form_text">Login:</span><input class="input_text" type="text" name="login"></div>
+						  <div class="form_input col-lg-9 offset-2"><span class="form_text">Password:</span><input class="input_text" type="password" name="password"></div>
+						  <a href="#" class="register_link form_link col-lg-7 offset-3">Don't have an account? Register here.</a>
+						  <div class="btn_wrap col=lg-12">
+							<button type="button" class="btn modal_close" data-dismiss="modal">Close</button>
+							<button type="button" class="btn modal_submit">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="register_wrap form_wrap">
+					<form>
+						<h3 class="form_header col-lg-12">Registration</h3>
+						<div class="form_input col-lg-11"><span class="form_text">Login:</span><input class="input_text" type="text" name="login"></div>
+						<div class="form_input col-lg-11"><span class="form_text">Email:</span><input class="input_text" type="text" name="email"></div>
+						<div class="form_input col-lg-11"><span class="form_text">Password:</span><input class="input_text" type="password" name="password"></div>
+						<div class="form_input col-lg-11"><span class="form_text">Confirm password:</span><input class="input_text" type="password" name="confirm_password"></div>
+						<a href="#" class="login_link form_link col-lg-7 offset-3">Have an account? Log in here.</a>
+						<div class="btn_wrap col=lg-12">
+							<button class="btn modal_close"  type="button" data-dismiss="modal">Close</button>
+							<button class="btn modal_submit" type="button">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 	<div class="modal fade" id="basket_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg" role="document">
@@ -367,7 +308,7 @@
 	        </button>
 	      </div>
 	      <div id="modal_content" class="modal-body row modal_content">
-	      	
+			<div id="basket_modal_content"></div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn modal_close" data-dismiss="modal">Close</button>
@@ -411,5 +352,6 @@
 	<script type="text/javascript" src="slick/slick.min.js"></script>
   	<script type="text/javascript" src="js/slick-slider.js"></script>
   	<script src="js/script.js"></script>
+	<script src="js/product.js"></script>
 	</body>
 </html>

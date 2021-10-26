@@ -140,15 +140,32 @@ img {
 	color: #34404b;
 	border: none;
 	background: none;
-	cursor: pointer;
 	outline: none;
+	cursor: pointer;
 }
 
-.navigation button:hover {
+.search_ibtn:hover {
 	-webkit-transform: scale(1.14);
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
+}
+
+.search_input {
+	transform: scale(0);
+	transform-origin:right center;
+	position: absolute;
+	right: 25px;
+	top: 0;
+	width: 20rem;
+	padding: 0 0.4rem;
+	font-size: 1.8rem;
+	transition: all 0.3s;
+}
+
+.search_input:focus {
+	transform: scale(1);
+	transition: all 0.3s;
 }
 
 .navigation button:first-child {
@@ -230,7 +247,8 @@ img {
 }
 
 .under_info_text:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #ff5912;
 }
 
 .under_info_text i {
@@ -315,14 +333,31 @@ img {
 
 .product_image {
 	padding: 2rem 4rem;
+	margin-bottom: 3rem;
 	background: #fff;
 	font-size: 1.8rem;
 	position: relative;
+	overflow: hidden;
+	height: 38.2rem;
+}
+
+.product_title {
+	height: 5.4rem;
+	overflow: hidden;
+}
+
+.product_image_title {
+	height: 5.4rem;
 	overflow: hidden;
 }
 
 .product_image a {
 	text-decoration: none;
+}
+
+.product_img {
+	width: 145px;
+	height: 215px;
 }
 
 .product_image:hover .product_image_hover {
@@ -339,11 +374,13 @@ img {
 	color: #34404b;
 	margin: 2.5rem 0 2rem 0;
 	font-weight: 700;
+	
 }
 
 .product_image_price {
 	color: #ff5912;
 	font-family: HarmoniaB, sans-serif;
+	height: 2.5rem;
 }
 
 .product_image_hover {
@@ -872,13 +909,13 @@ footer {
 #plus {
 	position: absolute;
 	top: 0;
-	left: 15rem;
+	left: 21rem;	
 }
 
 #minus {
 	position: absolute;
 	top: 0;
-	left: 21rem;
+	left: 15rem;
 }
 
 #plus, #minus {
@@ -967,10 +1004,6 @@ footer {
 }
 
 /* PRODUCTS */
-
-.intend {
-	margin-bottom: 3rem;
-}
 
 #products h4 {
 	margin: 0 4rem;
@@ -1266,6 +1299,9 @@ input[type=checkbox]:checked + label {
 }
 
 /* MODAL */
+#basket_modal_content {
+	width: 100%;
+}
 
 .empty_text {
 	font-size: 3rem;
@@ -1280,8 +1316,7 @@ input[type=checkbox]:checked + label {
 	font-size: 1.6rem;
 	background: #edf0f2;
 	padding: 1rem 2rem;
-	position: absolute;
-	left: 10px;
+	margin-right: 1rem;
 }
 
 .modal_submit {
@@ -1296,8 +1331,6 @@ input[type=checkbox]:checked + label {
 	background: #cd0000;
 	color: #fff;
 	padding: 1rem 2rem;
-	position: absolute;
-	left: 20%;
 }
 
 .modal_clear:hover {
@@ -1323,6 +1356,10 @@ input[type=checkbox]:checked + label {
 	margin-bottom: 3rem;
 	border: 1px solid #ece8e8;
 	background: #f4f6f8;
+}
+
+.confirm_product {
+	margin-bottom: 0;
 }
 
 .mod-prod-close {
@@ -1365,6 +1402,14 @@ input[type=checkbox]:checked + label {
 	padding: 0;
 }
 
+.modal-footer {
+	justify-content: space-between;
+}
+
+.login_modal_footer {
+	justify-content: space-around;
+}
+
 /* MODAL CONFIRM */
 
 .site-dialog {
@@ -1397,15 +1442,11 @@ dialog.dialog-scale {
             transform: translateX(-50%) scale(1);  
 }
 
-.site-dialog h1 {
+.dialog-header {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
     color: #fff;
-}
-
-.site-dialog p {
-    font-size: 18px;
 }
 
 .dialog-header {
@@ -1416,6 +1457,10 @@ dialog.dialog-scale {
 .dialog-content {
     padding: 30px 20px;
     background-color: #fff;
+}
+
+.delete-text {
+	font-size: 18px;
 }
 
 .btn-group {
@@ -1439,6 +1484,52 @@ dialog.dialog-scale {
 .btn-cancel:hover {
 	opacity: 0.9;
 }
+
+.form_wrap {
+	width: 100%;
+}
+
+.form_header {
+	display: block;
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 3rem;
+	font-family: HarmoniaBl, sans-serif;
+	color: #ff5912;
+}
+
+.form_input {
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.form_text {
+	margin-right: 1.5rem;
+}
+
+.input_text {
+	width: 248px;
+}
+
+.form_link {
+	font-size: 1.5rem;
+}
+
+.btn_wrap {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+
+.register_wrap {
+	display: none;
+}
+
 
 @media screen and (max-width: 1250px) {
 
@@ -1482,6 +1573,10 @@ dialog.dialog-scale {
 @media screen and (max-width: 991px) {
 	html {
 		font-size: 8px;
+	}
+
+	.search_input {
+		width: 18rem;
 	}
 
 	.product_image {
@@ -1534,6 +1629,12 @@ dialog.dialog-scale {
 		font-size: 2rem;
 		line-height: 40px;
 		cursor: pointer;
+	}
+
+	.search_input {
+		width: 16rem;
+		height: 4rem;
+		top: 5px;
 	}
 
 	.menu_fixed {
@@ -1757,6 +1858,10 @@ dialog.dialog-scale {
 
 	.navigation button:last-child {
 		right: 20px;
+	}
+
+	.search_input {
+		width: 12rem;
 	}
 
 	.basket_number {
